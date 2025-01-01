@@ -1,10 +1,11 @@
+import Search from "./components/Search";
 
 
 function App() {
 
   return (
     <>
-      <h1>App</h1>
+    <Search />
     </>
   )
 }
