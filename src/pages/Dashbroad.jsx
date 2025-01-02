@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react' 
 
 const Dashbroad = () => {
   return (
-    <div>Dashbroad</div>
+    <div>
+      This is the Dashbroad page.
+    </div>
   )
 }
 
