@@ -7,21 +7,31 @@ import PostViewer from
 import Search from "././components/Search";
 import Nav from "./Nav";
 import PageNotFound from "./pages/PageNotFound";
+import Profile from "./pages/Profile";
+import Setting from "./pages/Setting";
+import Products from "./pages/Products";
 
 function App() {
 
   return (
+    <>
     <BrowserRouter>
     <Nav />
     <Routes>
-      <Route path="*" element={<PageNotFound />}/>
+    <Route path="*" element={<PageNotFound />}/>
     <Route path="/" element={<Home />} />
-    <Route path="/dashboard" element={<Dashbroad />} />
+    <Route path="/products/:id" element={<Products/>}/> {/* Dynamic Routes*/}
+    <Route path="/dashboard" element={<Dashbroad />}>
+        <Route path="profile" element={<Profile />} />
+        <Route path="setting" element={<Setting />}/>
+     </Route>
     <Route path="/postviewer" element={<PostViewer />}/>
     <Route path="/search" element={<Search />}/>
 
     </Routes>
     </BrowserRouter>
+    </>
+    
   )
 }
 

@@ -9,6 +9,9 @@ const Nav = () => {
         <Link to="/postviewer" className='border border-black mx-5 p-2  rounded-md'>Post Viewer</Link>
         <Link to="/search" className='border border-black 
        rounded-md m-5 p-2'>Search Food</Link>
+        <Link to="/products" className='border border-black 
+       rounded-md m-5 p-2'>Products</Link>
+       
     </div>
   )
 }
